@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+        <h1>Home page</h1>
+
+        <form id="Formulario" method="GET">
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+            <div>
+                <label>Género:</label><br>
+                <input type="radio" id="masculino" name="genero" value="Masculino" required>
+                <label for="masculino">Masculino</label><br>
+                <input type="radio" id="femenino" name="genero" value="Femenino" required>
+                <label for="femenino">Femenino</label><br>
+                <input type="radio" id="otro" name="genero" value="Otro" required>
+                <label for="otro">Otro</label><br>
+            </div>
+            <div>
+                
+                <label for="materia_favorita">Materia favorita:</label>
+                <select id="materia_favorita" name="materia_favorita" required>
+                    <option value="">Seleccione una materia favorita</option>
+                    <option value="Análisis Matemático I">Análisis Matemático I</option>
+                    <option value="Álgebra y Geometría Analítica">Álgebra y Geometría Analítica</option>
+                    <option value="Matemática Discreta">Matemática Discreta</option>
+                    <option value="Sistemas y Organizaciones (Integradora)">Sistemas y Organizaciones (Integradora)</option>
+                    <option value="Algoritmo y Estructuras de Datos">Algoritmo y Estructuras de Datos</option>
+                    <option value="Arquitectura de Computadoras">Arquitectura de Computadoras</option>
+                    <option value="Física I">Física I</option>
+                    <option value="Inglés I">Inglés I</option>
+                    <option value="Química">Química</option>
+                    <option value="Análisis Matemático II">Análisis Matemático II</option>
+                    <option value="Física II">Física II</option>
+                    <option value="Análisis de Sistemas (Integradora)">Análisis de Sistemas (Integradora)</option>
+                    <option value="Sintaxis y Semántica de los Lenguajes">Sintaxis y Semántica de los Lenguajes</option>
+                    <option value="Paradigmas de Programación">Paradigmas de Programación</option>
+                    <option value="Sistemas Operativos">Sistemas Operativos</option>
+                    <option value="Sistemas de Representación">Sistemas de Representación</option>
+                    <option value="Probabilidades y Estadísticas">Probabilidades y Estadísticas</option>
+                    <option value="Diseño de Sistemas (Integradora)">Diseño de Sistemas (Integradora)</option>
+                    <option value="Comunicaciones">Comunicaciones</option>
+                    <option value="Matemática Superior">Matemática Superior</option>
+                    <option value="Gestión de Datos">Gestión de Datos</option>
+                    <option value="Ingeniería y Sociedad">Ingeniería y Sociedad</option>
+                    <option value="Economía">Economía</option>
+                    <option value="Inglés II">Inglés II</option>
+                    <option value="Redes de Información">Redes de Información</option>
+                    <option value="Administración de Recursos (Integradoras)">Administración de Recursos (Integradoras)</option>
+                    <option value="Investigación Operativa">Investigación Operativa</option>
+                    <option value="Simulación">Simulación</option>
+                    <option value="Ingeniería de Software">Ingeniería de Software</option>
+                    <option value="Teoría de Control">Teoría de Control</option>
+                    <option value="Legislación">Legislación</option>
+                    <option value="Proyecto Final (Integradora)">Proyecto Final (Integradora)</option>
+                    <option value="Inteligencia Artificial">Inteligencia Artificial</option>
+                    <option value="Administración Gerencial">Administración Gerencial</option>
+                    <option value="Sistemas de Gestión">Sistemas de Gestión</option>
+                </select>
+                    
+            </div>
+            <div>
+                <label>Habilidades:</label><br>
+                <input type="checkbox" id="habilidad1" name="habilidades" value="Programación">
+                <label for="habilidad1">Programación</label><br>
+                <input type="checkbox" id="habilidad2" name="habilidades" value="Idiomas">
+                <label for="habilidad2">Idiomas</label><br>
+                <input type="checkbox" id="habilidad3" name="habilidades" value="Arte">
+                <label for="habilidad3">Arte</label><br>
+                <input type="checkbox" id="habilidad4" name="habilidades" value="Deportes">
+                <label for="habilidad4">Deportes</label><br>
+            </div>
+            <div>
+                <label for="nivel_interes">Nivel de interés en la materia:</label>
+                <select id="nivel_interes" name="nivel_interes" required>
+                    <option value="">Seleccione un nivel</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Bajo">Bajo</option>
+                </select>
+            </div>
+            <div>
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
